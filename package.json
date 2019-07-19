@@ -1,0 +1,18 @@
+{
+  "name": "phonebookBackend",
+  "version": "1.0.0",
+  "description": "Backend for phonebook application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "author": "Elijah Smith",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
