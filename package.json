@@ -8,7 +8,7 @@
     "watch": "nodemon index.js",
     "build:ui": "rm -rf build && cd ../../part2/phonebook && yarn build && cp -r build ../../part3/phonebookBackend",
     "deploy": "git push heroku master",
-    "deploy:full": "yarn run build:ui && git add . && git commit -m uibuild && git push && yarn run deploy",    
+    "deploy:full": "yarn run build:ui && git add . && git commit -m uibuild && yarn run deploy",    
     "logs:prod": "heroku logs --tail"
   },
   "author": "Elijah Smith",
