@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const morgan = require('morgan')
 
 app.use(bodyParser.json())
+app.use(morgan('tiny'))
 
 let persons = [
   {
@@ -82,7 +84,6 @@ app.post('/api/persons', (req, res) => {
   }
 
   persons = persons.concat(person)
-  console.log(persons)
 
   res.json(person)
 })
